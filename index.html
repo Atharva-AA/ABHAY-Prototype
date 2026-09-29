@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhay. | Privacy-Preserving On-Device Vision Agent for ISRO</title>
+  <meta name="description" content="Abhay: Privacy-Preserving On-Device Visual Perception for Lightweight Browser Agents. Zero-cloud PII redaction, WebGPU computer vision, mathematical checksums, and sovereign automation for ISRO PS 26171.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Banner -->
+  <aside class="announcement-banner" id="announcement">
+    <div class="announcement-inner">
+      <span class="announcement-badge">SIH 2026 &bull; PS 26171</span>
+      <span class="announcement-text">
+        Watch on-device redaction in action &mdash; see zero-leak browser automation live.
+      </span>
+      <a href="#simulator" class="announcement-link">
+        Try Live Sanitizer &rarr;
+      </a>
+    </div>
+  </aside>
+
+  <!-- Top Navigation Bar (Polished & Centered Alignment) -->
+  <header class="navbar" id="top-nav">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="#hero" class="brand-link">
+          <img src="assets/isro-logo.svg" alt="ISRO Emblem" class="nav-isro-emblem">
+          <span class="brand-name">Abhay<span class="brand-dot">.</span></span>
+        </a>
+        <span class="brand-sub">ISRO PS 26171</span>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#how-it-works" class="nav-item">How It Works</a>
+        <a href="#pros-cons" class="nav-item">Pros & Cons</a>
+        <a href="#tour" class="nav-item">Product Tour</a>
+        <a href="#simulator" class="nav-item">Live Sanitizer</a>
+        <a href="#download" class="nav-item">Download</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Accessibility Controls -->
+        <div class="accessibility-controls" aria-label="Accessibility options">
+          <div class="text-scaler" title="Adjust text size">
+            <button id="btn-font-inc" class="acc-btn" aria-label="Increase text size">A+</button>
+            <button id="btn-font-reset" class="acc-btn" aria-label="Default text size">A</button>
+            <button id="btn-font-dec" class="acc-btn" aria-label="Decrease text size">A-</button>
+          </div>
+          <select id="select-lang" class="lang-select" aria-label="Select language">
+            <option value="EN">English</option>
+            <option value="HI">हिन्दी</option>
+          </select>
+        </div>
+
+        <div class="nav-buttons">
+          <button class="btn-outline-pill" id="btn-open-login">Sign In</button>
+          <a href="https://github.com/Atharva-AA/ABHAY-Prototype/releases/latest/download/abhay-extension.zip" class="btn-black-pill">Download</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <!-- Left Column: Copy & Input -->
+        <div class="hero-content">
+          <div class="hero-tag-row">
+            <span class="hero-tag-pill primary-tag">Privacy-First AI</span>
+            <span class="hero-tag-pill subtle-tag">SIH 2026 &middot; PS 26171</span>
+          </div>
+
+          <div class="hero-headline-wrap">
+            <h1 class="hero-headline">
+              Privacy-Preserving <span class="bubble-highlight">On-Device<span class="bubble-dot mint-dot"></span><span class="bubble-dot yellow-dot"></span></span> Browser Agents for ISRO.
+            </h1>
+          </div>
+
+          <p class="hero-subheading">
+            Traditional AI agents stream your raw screen, passwords, and citizen data to foreign servers. <strong>Abhay</strong> introduces sovereign, lightweight browser automation with WebGPU computer vision and mathematical checksums that sanitize sensitive PII locally before any model sees it.
+          </p>
+
+          <!-- Interactive Action Pill Input Bar -->
+          <div class="hero-input-bar">
+            <input type="text" id="hero-task-input" class="hero-pill-input" placeholder="Type a task: e.g., 'Fill SAC recruitment form with Asha Verma's details'..." value="Fill SAC recruitment form with Asha Verma's details">
+            <button class="hero-pill-btn" id="btn-hero-launch">Get started</button>
+          </div>
+
+          <!-- Feature Check Badges -->
+          <div class="hero-pills-grid">
+            <div class="hero-feature-check">
+              <span class="check-icon">✓</span>
+              <span>Zero PII in the Cloud</span>
+            </div>
+            <div class="hero-feature-check">
+              <span class="check-icon">✓</span>
+              <span>100% Offline-Ready</span>
+            </div>
+            <div class="hero-feature-check">
+              <span class="check-icon">✓</span>
+              <span>3-Layer Detection</span>
+            </div>
+            <div class="hero-feature-check">
+              <span class="check-icon">✓</span>
+              <span>On-Device Redaction</span>
+            </div>
+          </div>
+
+          <!-- Mini Stats Row under Search -->
+          <div class="hero-stats-row">
+            <div class="stat-pill-card">
+              <div class="stat-icon-circle yellow-bg">🔒</div>
+              <div class="stat-info">
+                <span class="stat-label">Total Leaks</span>
+                <span class="stat-value">0 Bytes</span>
+                <span class="stat-sub positive">+100% Private</span>
+              </div>
+            </div>
+
+            <div class="stat-pill-card">
+              <div class="stat-icon-circle mint-bg">⚡</div>
+              <div class="stat-info">
+                <span class="stat-label">Added Latency</span>
+                <span class="stat-value">29.9 ms</span>
+                <span class="stat-sub positive">Sub-30ms</span>
+              </div>
+            </div>
+
+            <div class="stat-pill-card">
+              <div class="stat-icon-circle yellow-bg">🎯</div>
+              <div class="stat-info">
+                <span class="stat-label">PII Recall</span>
+                <span class="stat-value">100%</span>
+                <span class="stat-sub positive">96 Targets</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: 3D Abhay AI Core on Yellow Backdrop & Floating Widgets -->
+        <div class="hero-visual">
+          <div class="hero-figure-wrapper">
+            <!-- Warm Yellow Backdrop Circle -->
+            <div class="yellow-circle-backdrop"></div>
+            <!-- Translucent Accent Pastel Blobs -->
+            <div class="pastel-blob mint-blob-top"></div>
+            <div class="pastel-blob mint-blob-bottom"></div>
+
+            <!-- Abhay Live Video Showcase Player (YouTube Embed) -->
+            <div class="hero-video-card" id="hero-video-container">
+              <div class="hero-video-header">
+                <div class="hero-video-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <div class="hero-video-badge">
+                  <span class="live-indicator"></span>
+                  <span>PRODUCT DEMO</span>
+                </div>
+              </div>
+              <div class="hero-video-responsive">
+                <iframe
+                  id="hero-youtube-iframe"
+                  src="https://www.youtube.com/embed/YjuYxcOuuHE?rel=0&modestbranding=1"
+                  title="Abhay ISRO On-Device Privacy Agent Demo Video"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+
+            <!-- Floating Overlay Card 1: PII Shield -->
+            <div class="floating-widget widget-top-left" id="widget-shield">
+              <div class="widget-icon-pill">🛡️</div>
+              <div class="widget-text">
+                <span class="widget-title">On-Device Vault</span>
+                <span class="widget-status"><span class="pulse-green"></span>Active (No Cloud Leaks)</span>
+              </div>
+            </div>
+
+            <!-- Floating Overlay Card 2: Batch Execution -->
+            <div class="floating-widget widget-bottom-right" id="widget-batch">
+              <div class="widget-badge-row">
+                <span class="badge-mini">BATCH 5x</span>
+                <span class="widget-metric">1 Round-Trip</span>
+              </div>
+              <span class="widget-desc">4 KYC fields auto-filled in 1 turn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP / BADGES -->
+    <section class="trust-strip">
+      <div class="trust-container">
+        <div class="trust-badges-row">
+          <span class="trust-badge">🔒 On-Device Redaction</span>
+          <span class="trust-badge">🌐 Offline-Deployable</span>
+          <span class="trust-badge">🇮🇳 Government-Grade Privacy</span>
+          <span class="trust-badge">🚨 Leak Guard Active</span>
+          <span class="trust-badge">📜 DPDP Act 2023 Compliant</span>
+        </div>
+        <div class="trust-metrics-summary">
+          <div class="trust-stat">
+            <span class="stat-num">3-Layer</span>
+            <span class="stat-txt">DOM + Regex + Vision</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-stat">
+            <span class="stat-num">0 Bytes</span>
+            <span class="stat-txt">Raw Screen Leaks</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-txt">Offline Compatible</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION: 4 STEPS -->
+    <section class="section-how-it-works" id="how-it-works">
+      <div class="editorial-container">
+        <div class="editorial-header">
+          <span class="sub-label-pill">FOUR STEPS • ENTIRELY ON-DEVICE</span>
+          <h2 class="editorial-title">How Abhay Operates</h2>
+          <p class="editorial-subtitle">
+            Local perception executes inside your browser tab before any request ever touches external networks.
+          </p>
+        </div>
+
+        <div class="how-steps-grid">
+          <div class="step-card">
+            <div class="step-icon-wrap">
+              <div class="step-art-circle mint-circle"></div>
+              <span class="step-emoji">📷</span>
+            </div>
+            <div class="step-number-tag">STEP 01</div>
+            <h3 class="step-title">Capture</h3>
+            <p class="step-desc">
+              The extension observes page DOM elements and canvas input locally in browser memory without streaming full frames.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-icon-wrap">
+              <div class="step-art-circle yellow-circle"></div>
+              <span class="step-emoji">🔍</span>
+            </div>
+            <div class="step-number-tag">STEP 02</div>
+            <h3 class="step-title">Detect PII</h3>
+            <p class="step-desc">
+              A 3-layer edge model (DOM heuristics, Verhoeff/Luhn checksums, and WebGPU YOLOv8/YuNet) flags names, IDs, cards, and faces.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-icon-wrap">
+              <div class="step-art-circle mint-circle"></div>
+              <span class="step-emoji">🛡️</span>
+            </div>
+            <div class="step-number-tag">STEP 03</div>
+            <h3 class="step-title">Redact & Vault</h3>
+            <p class="step-desc">
+              Bounding-box pixels are permanently destroyed via solid rectangles. Real values are locked in an encrypted in-memory Vault.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-icon-wrap">
+              <div class="step-art-circle yellow-circle"></div>
+              <span class="step-emoji">⚡</span>
+            </div>
+            <div class="step-number-tag">STEP 04</div>
+            <h3 class="step-title">Act Safely</h3>
+            <p class="step-desc">
+              Only shape-safe tokens (<code class="inline-code">{{AADHAAR_1}}</code>) reach open-weight models. Actions are actuated via trusted CDP events.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT TOUR INTERACTIVE CAROUSEL -->
+    <section class="section-tour" id="tour">
+      <div class="editorial-container">
+        <div class="editorial-header">
+          <span class="sub-label-pill">PRODUCT TOUR</span>
+          <h2 class="editorial-title">Explore Core Capabilities</h2>
+          <p class="editorial-subtitle">
+            See how Abhay combines edge intelligence, aerospace security, and universal portal compatibility.
+          </p>
+        </div>
+
+        <div class="carousel-container" id="product-carousel">
+          <div class="carousel-slide-viewport">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active" data-slide="0">
+              <div class="slide-content">
+                <span class="slide-pill-badge">DATA SOVEREIGNTY</span>
+                <h3 class="slide-headline">Your Data Never Leaves Your Device</h3>
+                <p class="slide-subtext">
+                  On-device redaction strips PII before any content is sent for AI reasoning. Passwords, biometric faces, and citizen IDs are sanitized directly in client RAM.
+                </p>
+                <div class="slide-feature-row">
+                  <span class="slide-tag">✓ 0 Bytes Network Leaks</span>
+                  <span class="slide-tag">✓ Irreversible Pixel Destruction</span>
+                </div>
+              </div>
+              <div class="slide-image-side">
+                <img src="assets/hero-slide-1-on-device.svg" alt="Browser window with locked redacted field" class="slide-svg-img">
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide" data-slide="1">
+              <div class="slide-content">
+                <span class="slide-pill-badge">AEROSPACE GRADE</span>
+                <h3 class="slide-headline">Built for Government-Grade Security</h3>
+                <p class="slide-subtext">
+                  Offline-deployable and architected around ISRO data sovereignty requirements. Runs seamlessly across air-gapped laboratory and defense networks.
+                </p>
+                <div class="slide-feature-row">
+                  <span class="slide-tag">✓ SHA-256 Audit Chain</span>
+                  <span class="slide-tag">✓ Air-Gap Ready</span>
+                </div>
+              </div>
+              <div class="slide-image-side">
+                <img src="assets/hero-slide-2-security.svg" alt="Shield with lock representing security" class="slide-svg-img">
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide" data-slide="2">
+              <div class="slide-content">
+                <span class="slide-pill-badge">MULTI-TIER ENGINE</span>
+                <h3 class="slide-headline">3-Layer PII Detection</h3>
+                <p class="slide-subtext">
+                  DOM parsing, Dihedral group checksums (Verhoeff & Luhn), and WebGPU neural vision work harmoniously to reject 90% of false alarms in under 5ms.
+                </p>
+                <div class="slide-feature-row">
+                  <span class="slide-tag">✓ 100% Precision & Recall</span>
+                  <span class="slide-tag">✓ Sub-30ms Added Latency</span>
+                </div>
+              </div>
+              <div class="slide-image-side">
+                <img src="assets/hero-slide-3-detection.svg" alt="Diagram of three stacked detection layers" class="slide-svg-img">
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-slide" data-slide="3">
+              <div class="slide-content">
+                <span class="slide-pill-badge">SEAMLESS INTEGRATION</span>
+                <h3 class="slide-headline">One Extension, Every Government Portal</h3>
+                <p class="slide-subtext">
+                  Works seamlessly across SAC, VSSC, e-Procurement, and internal ISRO portals without modifying backend servers or installing host-level drivers.
+                </p>
+                <div class="slide-feature-row">
+                  <span class="slide-tag">✓ Chrome & Brave Support</span>
+                  <span class="slide-tag">✓ React 19 Synthetic Event Bypass</span>
+                </div>
+              </div>
+              <div class="slide-image-side">
+                <img src="assets/hero-slide-4-compatibility.svg" alt="Browser extension over multiple portal tabs" class="slide-svg-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="carousel-nav-bar">
+            <button class="carousel-arrow-btn" id="car-prev" aria-label="Previous slide">&larr;</button>
+            
+            <div class="carousel-indicators" id="car-dots">
+              <button class="dot-btn active" data-index="0" aria-label="Slide 1"></button>
+              <button class="dot-btn" data-index="1" aria-label="Slide 2"></button>
+              <button class="dot-btn" data-index="2" aria-label="Slide 3"></button>
+              <button class="dot-btn" data-index="3" aria-label="Slide 4"></button>
+            </div>
+
+            <button class="carousel-arrow-btn" id="car-next" aria-label="Next slide">&rarr;</button>
+            <button class="carousel-play-btn" id="car-toggle-play" aria-label="Toggle autoplay">⏸</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROS & CONS SECTION (The Complete Architectural Solution) -->
+    <section class="section-pros-cons" id="pros-cons">
+      <div class="editorial-container">
+        <div class="editorial-header">
+          <span class="sub-label-pill">THE COMPLETE ARCHITECTURAL COMPARISON</span>
+          <h2 class="editorial-title">Why Existing Agents Fail & How Abhay Wins</h2>
+          <p class="editorial-subtitle">
+            Every other agent was designed for open-ended consumer shopping, not sovereign aerospace or citizen defense. Here is the side-by-side engineering reality.
+          </p>
+        </div>
+
+        <!-- Pros and Cons Grid -->
+        <div class="comparison-dual-grid">
+          
+          <!-- LEFT: THE CONS (Flaws in Previous Agents) -->
+          <div class="cons-column">
+            <div class="column-header cons-header">
+              <div class="header-icon-pill red-pill">✕</div>
+              <div>
+                <h3 class="col-title">Traditional Cloud Agents</h3>
+                <span class="col-sub">Claude Computer Use, MultiOn, Operator, AutoGPT</span>
+              </div>
+            </div>
+
+            <div class="flaw-item-card">
+              <div class="flaw-number">01</div>
+              <div class="flaw-content">
+                <h4 class="flaw-heading">Full-Screen Cloud Streaming</h4>
+                <p class="flaw-detail">
+                  Continuously streams live unredacted screenshots to foreign commercial APIs. Aadhaar numbers, passwords, bank accounts, and employee faces are transmitted over public networks.
+                </p>
+                <div class="flaw-consequence">
+                  <strong>The Hazard:</strong> Massive violation of India's DPDP Act, GDPR, and defense data sovereignty regulations.
+                </div>
+              </div>
+            </div>
+
+            <div class="flaw-item-card">
+              <div class="flaw-number">02</div>
+              <div class="flaw-content">
+                <h4 class="flaw-heading">Reversible Blur & Pixelation</h4>
+                <p class="flaw-detail">
+                  Agents that claim to "mask" data often use Gaussian blur or mosaics. Modern neural deblurring and tools like Bishop Fox’s <em>Unredacter</em> mathematically invert blur to reconstruct private text and faces.
+                </p>
+                <div class="flaw-consequence">
+                  <strong>The Hazard:</strong> False sense of security; redactions are trivially cracked in forensics.
+                </div>
+              </div>
+            </div>
+
+            <div class="flaw-item-card">
+              <div class="flaw-number">03</div>
+              <div class="flaw-content">
+                <h4 class="flaw-heading">Coordinate Fragility & Missing Clicks</h4>
+                <p class="flaw-detail">
+                  Vision-only agents click fixed pixel coordinates <code>(x, y)</code>. When a page reflows, scrolls, or scales on high-DPI displays, clicks miss target buttons, causing catastrophic data corruption or accidental purchases.
+                </p>
+                <div class="flaw-consequence">
+                  <strong>The Hazard:</strong> Destructive clicks on wrong elements during form submissions.
+                </div>
+              </div>
+            </div>
+
+            <div class="flaw-item-card">
+              <div class="flaw-number">04</div>
+              <div class="flaw-content">
+                <h4 class="flaw-heading">React & Anti-Bot Blocking</h4>
+                <p class="flaw-detail">
+                  Standard extensions dispatch synthetic JavaScript events (<code>element.click()</code>). Modern web frameworks (React 19, Vue, Angular) and security portals reject inputs lacking genuine <code>isTrusted: true</code> flags.
+                </p>
+                <div class="flaw-consequence">
+                  <strong>The Hazard:</strong> Agents get stuck on form fields without typing or updating component state.
+                </div>
+              </div>
+            </div>
+
+            <div class="flaw-item-card">
+              <div class="flaw-number">05</div>
+              <div class="flaw-content">
+                <h4 class="flaw-heading">Zero Auditability & Accountability</h4>
+                <p class="flaw-detail">
+                  Logs are stored as plain text or discarded. When an unauthorized action or leak occurs, there is no cryptographic proof of what was captured or if logs were edited after the event.
+                </p>
+                <div class="flaw-consequence">
+                  <strong>The Hazard:</strong> Unacceptable for aerospace audits or government compliance.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: THE PROS (Abhay Solution) -->
+          <div class="pros-column">
+            <div class="column-header pros-header">
+              <div class="header-icon-pill green-pill">✓</div>
+              <div>
+                <h3 class="col-title">Abhay Browser Agent</h3>
+                <span class="col-sub">Built for ISRO PS 26171 • Client-Side Edge Perception</span>
+              </div>
+            </div>
+
+            <div class="solution-item-card">
+              <div class="solution-number">01</div>
+              <div class="solution-content">
+                <h4 class="solution-heading">Shape Over Content (Zero Leaks)</h4>
+                <p class="solution-detail">
+                  The model is sent only structural element lists and placeholder tags (<code>{{AADHAAR_1}}</code>). Real values reside in an isolated, in-memory <strong>Vault</strong> on the client and never touch the wire.
+                </p>
+                <div class="solution-advantage">
+                  <strong>Our Advantage:</strong> 100% sovereign on-device execution. Proved zero leaked bytes across 500+ test runs.
+                </div>
+              </div>
+            </div>
+
+            <div class="solution-item-card">
+              <div class="solution-number">02</div>
+              <div class="solution-content">
+                <h4 class="solution-heading">Permanent Pixel Destruction (3px Margin)</h4>
+                <p class="solution-detail">
+                  Uses solid <code>ctx.fillRect</code> black/grey boxes flattened into JPEG via <code>canvas.convertToBlob()</code>. The covered pixels genuinely cease to exist in the output file, making deblurring impossible.
+                </p>
+                <div class="solution-advantage">
+                  <strong>Our Advantage:</strong> Cryptographically sound and empirically verified by post-redaction OCR.
+                </div>
+              </div>
+            </div>
+
+            <div class="solution-item-card">
+              <div class="solution-number">03</div>
+              <div class="solution-content">
+                <h4 class="solution-heading">Live Registry & Integer Addressing</h4>
+                <p class="solution-detail">
+                  Elements are addressed via 1-based sequential integers (<code>[1]</code>, <code>[2]</code>) tied to live DOM object references in an isolated content script registry. References survive dynamic scrolling and layout shifts.
+                </p>
+                <div class="solution-advantage">
+                  <strong>Our Advantage:</strong> 100% targeting accuracy even on heavy dynamic SPAs.
+                </div>
+              </div>
+            </div>
+
+            <div class="solution-item-card">
+              <div class="solution-number">04</div>
+              <div class="solution-content">
+                <h4 class="solution-heading">Chrome DevTools Protocol (CDP) Hardware Input</h4>
+                <p class="solution-detail">
+                  Actions go through <code>chrome.debugger</code>, dispatching genuine OS-level hardware mouse events and keystrokes. For fallback, our native prototype descriptor setter bypasses React's virtual DOM traps.
+                </p>
+                <div class="solution-advantage">
+                  <strong>Our Advantage:</strong> Passes anti-bot detection and React 19 controlled input checks natively.
+                </div>
+              </div>
+            </div>
+
+            <div class="solution-item-card">
+              <div class="solution-number">05</div>
+              <div class="solution-content">
+                <h4 class="solution-heading">Tamper-Evident SHA-256 Hash Chain</h4>
+                <p class="solution-detail">
+                  Every action, screenshot hash, and finding is linked via a mathematical SHA-256 hash chain (<code>chain.js</code>). If any local storage file is modified, the cryptographic chain breaks and flags an alert.
+                </p>
+                <div class="solution-advantage">
+                  <strong>Our Advantage:</strong> Defense-grade compliance with zero raw PII stored in local logs.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Problem-Solution Highlights -->
+        <div class="problems-grid-section">
+          <h3 class="problems-heading">Real-World Government Challenges Solved</h3>
+          <div class="problems-cards-grid">
+            <div class="prob-sol-card">
+              <div class="prob-row">
+                <span class="prob-badge">PROBLEM</span>
+                <p class="prob-text">Staff paste citizen details into AI tools, exposing names and IDs to 3rd-party cloud servers.</p>
+              </div>
+              <div class="sol-row">
+                <span class="sol-badge">ABHAY FIX</span>
+                <p class="sol-text">Automated on-device DOM & regex redaction intercepts and tokenizes sensitive fields instantly.</p>
+              </div>
+            </div>
+
+            <div class="prob-sol-card">
+              <div class="prob-row">
+                <span class="prob-badge">PROBLEM</span>
+                <p class="prob-text">IT & audit teams have zero visibility into what browser extensions actually transmit.</p>
+              </div>
+              <div class="sol-row">
+                <span class="sol-badge">ABHAY FIX</span>
+                <p class="sol-text">Continuous Leak Guard inspects outbound packets and blocks any transmission containing raw PII.</p>
+              </div>
+            </div>
+
+            <div class="prob-sol-card">
+              <div class="prob-row">
+                <span class="prob-badge">PROBLEM</span>
+                <p class="prob-text">Staff spend hours manually blacking out sensitive documents prior to sharing or approval.</p>
+              </div>
+              <div class="sol-row">
+                <span class="sol-badge">ABHAY FIX</span>
+                <p class="sol-text">Real-time WebGPU YOLOv8 + YuNet visual perception destroys confidential areas in sub-30ms.</p>
+              </div>
+            </div>
+
+            <div class="prob-sol-card">
+              <div class="prob-row">
+                <span class="prob-badge">PROBLEM</span>
+                <p class="prob-text">Air-gapped secure labs at ISRO/DRDO cannot connect to commercial SaaS AI APIs.</p>
+              </div>
+              <div class="sol-row">
+                <span class="sol-badge">ABHAY FIX</span>
+                <p class="sol-text">Fully offline-deployable FastAPI orchestrator paired with open-weight Qwen models.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE INTERACTIVE SANITIZER & IN-MEMORY VAULT -->
+    <section class="section-simulator" id="simulator">
+      <div class="editorial-container">
+        <div class="editorial-header">
+          <span class="sub-label-pill">TRY IT YOURSELF IN REAL TIME</span>
+          <h2 class="editorial-title">Live On-Device Privacy Sanitizer</h2>
+          <p class="editorial-subtitle">
+            See our client-side mathematical checksum algorithms (Verhoeff for Aadhaar, Luhn for cards) and tokenization vault run live in your browser right now.
+          </p>
+        </div>
+
+        <div class="simulator-card-box">
+          <div class="sim-presets-bar">
+            <span class="preset-label">Choose a test scenario:</span>
+            <div class="preset-pills">
+              <button class="pill-btn-small" data-preset="aadhaar">Aadhaar Checksum</button>
+              <button class="pill-btn-small" data-preset="pan">PAN Tax ID</button>
+              <button class="pill-btn-small" data-preset="card">Credit Card (Luhn)</button>
+              <button class="pill-btn-small active" data-preset="mixed">Full Citizen Profile</button>
+              <button class="pill-btn-small" data-preset="negative">Hard Negative (Order ID)</button>
+            </div>
+          </div>
+
+          <div class="sim-split-layout">
+            <!-- Left: Text Area Input -->
+            <div class="sim-column">
+              <label class="sim-field-label">Raw User Input (What exists on your local screen):</label>
+              <textarea id="sim-input-text" class="sim-textarea" placeholder="Type or paste any text with Aadhaar, PAN, phone, email, card numbers..."></textarea>
+              <div class="sim-btn-row">
+                <button id="btn-run-sanitize" class="btn-yellow-pill">Run Privacy Sanitizer</button>
+                <span id="sim-status" class="sim-status-text">Ready</span>
+              </div>
+            </div>
+
+            <!-- Right: Sanitized Output & Vault -->
+            <div class="sim-column">
+              <label class="sim-field-label">Sanitized Output (What is safely transmitted to the model):</label>
+              <div id="sim-sanitized-output" class="sim-output-display"></div>
+
+              <!-- Vault Table -->
+              <div class="sim-vault-container">
+                <div class="vault-bar-title">
+                  <span>IN-MEMORY VAULT (STORED ON CLIENT DEVICE ONLY)</span>
+                  <span class="badge-vault-secure">SECURE</span>
+                </div>
+                <div id="sim-vault-items" class="vault-items-list">
+                  <span class="empty-note">No tokens in vault yet.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASE DEMO & LEAK GUARD -->
+    <section class="section-showcase-demo" id="demo-showcase">
+      <div class="editorial-container">
+        <div class="showcase-card-layout">
+          <div class="showcase-left">
+            <span class="sub-label-pill">LEAK GUARD TECHNOLOGY</span>
+            <h2 class="showcase-title">Watches Every Outbound Request</h2>
+            <p class="showcase-desc">
+              Continuously monitors network packets to intercept and block accidental PII leaks before they leave your browser tab &mdash; zero configuration required.
+            </p>
+            <div class="leak-detects-list">
+              <span class="detect-item">Aadhaar & PAN IDs</span>
+              <span class="detect-item">Biometric Faces</span>
+              <span class="detect-item">Phone & Email</span>
+              <span class="detect-item">Payment Cards</span>
+              <span class="detect-item">Passwords</span>
+            </div>
+            <div class="showcase-actions">
+              <a href="#simulator" class="btn-black-pill">Test Sanitizer Now</a>
+              <a href="docs/ppt_technical.md" target="_blank" class="btn-outline-pill">Read Technical Slides</a>
+            </div>
+          </div>
+
+          <div class="showcase-right">
+            <div class="video-preview-frame">
+              <div class="video-mock-screen">
+                <div class="video-badge-overlay">
+                  <span class="badge-live-pulse"></span>
+                  <span>LEAK GUARD ACTIVE</span>
+                </div>
+                <div class="video-center-play" id="btn-play-demo">
+                  <span class="play-triangle">▶</span>
+                </div>
+                <div class="video-info-bar">
+                  <span class="video-title-txt">ISRO SAC Recruitment Automation Demo</span>
+                  <span class="video-time-txt">0 Bytes Leaked</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD EXTENSION SECTION -->
+    <section class="section-download" id="download">
+      <div class="editorial-container">
+        <div class="download-banner-card">
+          <div class="download-text-side">
+            <span class="sub-label-pill">GET THE EXTENSION</span>
+            <h2 class="download-headline">Download Abhay for Chrome</h2>
+            <p class="download-subtext">
+              Install the extension directly into your browser to begin automating web forms and portals with zero cloud data leaks.
+            </p>
+            <div class="download-badges-row">
+              <span class="dl-badge ready">✅ Chrome Web Store Ready</span>
+              <span class="dl-badge planned">🔜 Firefox (Manifest v3)</span>
+              <span class="dl-badge offline">⚡ 100% Offline Compatible</span>
+            </div>
+          </div>
+          <div class="download-action-side">
+            <a href="https://github.com/Atharva-AA/ABHAY-Prototype/releases/latest/download/abhay-extension.zip" class="btn-black-pill btn-large" id="btn-download-crx">
+              Download Extension (.zip)
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-outline-pill btn-large">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="section-cta-banner">
+      <div class="cta-inner-card">
+        <div class="cta-text-side">
+          <h2 class="cta-headline">Ready to deploy Abhay web automation?</h2>
+          <p class="cta-subline">
+            Built specifically for the Indian Space Research Organisation (ISRO) under Smart India Hackathon PS 26171.
+          </p>
+        </div>
+        <div class="cta-btn-side">
+          <a href="docs/ppt_technical.md" target="_blank" class="btn-black-pill btn-large">View Technical Slides</a>
+          <a href="docs/README.md" target="_blank" class="btn-outline-pill btn-large">Read System Docs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- AUTH MODAL: LOGIN & SIGN UP -->
+  <div class="modal-backdrop" id="auth-modal" style="display: none;">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="btn-close-auth">&times;</button>
+      
+      <div class="modal-header-brand">
+        <img src="assets/isro-logo.svg" alt="ISRO" class="modal-isro-icon">
+        <span class="brand-name">Abhay<span class="brand-dot">.</span></span>
+      </div>
+
+      <!-- Mode Switcher Tabs -->
+      <div class="auth-tabs-row">
+        <button class="auth-tab-btn active" id="tab-login" data-mode="login">Log In</button>
+        <button class="auth-tab-btn" id="tab-signup" data-mode="signup">Sign Up</button>
+      </div>
+
+      <h3 class="auth-title" id="auth-title">Welcome Back</h3>
+      <p class="auth-subtitle" id="auth-subtitle">Log in to manage your sovereign agent credentials and audits.</p>
+
+      <form class="auth-form" id="auth-form" onsubmit="return false;">
+        <div class="form-group" id="group-name" style="display: none;">
+          <label class="form-label" for="auth-name">Full Name</label>
+          <input type="text" id="auth-name" class="form-input" placeholder="Asha Verma">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="auth-email">Gov/Agency Email</label>
+          <input type="email" id="auth-email" class="form-input" placeholder="asha.verma@isro.gov.in" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="auth-password">Password</label>
+          <input type="password" id="auth-password" class="form-input" placeholder="••••••••" required>
+        </div>
+
+        <div class="form-group" id="group-confirm" style="display: none;">
+          <label class="form-label" for="auth-confirm">Confirm Password</label>
+          <input type="password" id="auth-confirm" class="form-input" placeholder="••••••••">
+        </div>
+
+        <button type="submit" class="btn-black-pill btn-full" id="btn-submit-auth">Log In</button>
+        <div class="auth-feedback" id="auth-feedback"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Clean Footer -->
+  <footer class="main-footer">
+    <div class="footer-inner">
+      <div class="footer-brand-row">
+        <img src="assets/isro-logo.svg" alt="ISRO" class="footer-isro-emblem">
+        <span class="brand-name">Abhay<span class="brand-dot">.</span></span>
+        <span class="footer-pill-tag">ISRO PS 26171</span>
+      </div>
+      <p class="footer-copy">
+        Privacy-Preserving On-Device Visual Perception for Lightweight Browser Agents.<br>
+        Built for Department of Space, Government of India &bull; Smart India Hackathon 2026.
+      </p>
+      <div class="footer-links-row">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#pros-cons">Pros & Cons</a>
+        <a href="#tour">Product Tour</a>
+        <a href="#simulator">Live Sanitizer</a>
+        <a href="https://github.com/Atharva-AA/ABHAY-Prototype/releases/latest/download/abhay-extension.zip">Download Extension</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

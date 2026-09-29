@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Vercel
+.vercel/
+
+# Environment
+.env
+.env*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Extension build (distributed via GitHub Releases)
+assets/abhay-extension.zip

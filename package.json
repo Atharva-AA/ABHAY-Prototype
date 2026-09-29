@@ -1,0 +1,18 @@
+{
+  "name": "abhay-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Abhay - Privacy-Preserving On-Device Vision Agent for ISRO",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "privacy",
+    "on-device",
+    "isro",
+    "ai-agent",
+    "redaction",
+    "sih"
+  ]
+}
